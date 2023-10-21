@@ -23,8 +23,7 @@ const displayTemples = (temples) =>{
 const getTemples = async () => {    
     const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
     if (response.ok) {
-        templeList = await response.json();
-        console.log(templeList);
+        templeList = await response.json();        
         displayTemples(templeList);
     }
 }
